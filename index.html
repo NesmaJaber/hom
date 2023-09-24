@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login-style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/media-login.css">
+    <title>Document</title>
+</head>
+<body class="login-page">
+    <div class="login-form">
+        <div class="brand-item">
+            <div class="item-logo"><a class="brand" href="#"><img src="img/logo.png" alt><span>الحلول</span></a></div>
+            <div>   
+                <svg class="stroke-svg" xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 34" fill="none">
+                    <path d="M1 1L0.999999 33" stroke="#C5C9D5"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <div>
+                <a class="link-brand" href="#">إدارة النظام</a>
+            </div>
+        </div>
+        <div class="login-header">
+            <p class="title">تسجيل الدخول إلي حسابك</p>
+            <p class="des">أدخل التفاصيل للمضي قدما</p>
+        </div>
+        <form action="" class="form">
+             <div class="email-field">
+                <p class="email-title">البريد الالكتروني</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M12.1596 12.5458C12.1296 12.5458 12.1096 12.5458 12.0796 12.5458C12.0296 12.5358 11.9596 12.5358 11.8996 12.5458C8.99957 12.4558 6.80957 10.1758 6.80957 7.36578C6.80957 4.50578 9.13957 2.17578 11.9996 2.17578C14.8596 2.17578 17.1896 4.50578 17.1896 7.36578C17.1796 10.1758 14.9796 12.4558 12.1896 12.5458C12.1796 12.5458 12.1696 12.5458 12.1596 12.5458ZM11.9996 3.67578C9.96957 3.67578 8.30957 5.33578 8.30957 7.36578C8.30957 9.36578 9.86957 10.9758 11.8596 11.0458C11.9096 11.0358 12.0496 11.0358 12.1796 11.0458C14.1396 10.9558 15.6796 9.34578 15.6896 7.36578C15.6896 5.33578 14.0296 3.67578 11.9996 3.67578Z" fill="#8B9398"/>
+                    <path d="M12.1696 23.4758C10.2096 23.4758 8.23961 22.9758 6.74961 21.9758C5.35961 21.0558 4.59961 19.7958 4.59961 18.4258C4.59961 17.0558 5.35961 15.7858 6.74961 14.8558C9.74961 12.8658 14.6096 12.8658 17.5896 14.8558C18.9696 15.7758 19.7396 17.0358 19.7396 18.4058C19.7396 19.7758 18.9796 21.0458 17.5896 21.9758C16.0896 22.9758 14.1296 23.4758 12.1696 23.4758ZM7.57961 16.1158C6.61961 16.7558 6.09961 17.5758 6.09961 18.4358C6.09961 19.2858 6.62961 20.1058 7.57961 20.7358C10.0696 22.4058 14.2696 22.4058 16.7596 20.7358C17.7196 20.0958 18.2396 19.2758 18.2396 18.4158C18.2396 17.5658 17.7096 16.7458 16.7596 16.1158C14.2696 14.4558 10.0696 14.4558 7.57961 16.1158Z" fill="#8B9398"/>
+                </svg>
+                <input type="email" placeholder="البريد الالكتروني">
+             </div>
+             <div class="password-field">
+                <p class="pass-title"> كلمة المرور</p>
+                <svg class="pass" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M6 10.9258V8.92578C6 5.61578 7 2.92578 12 2.92578C17 2.92578 18 5.61578 18 8.92578V10.9258" stroke="#8B9398" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 19.4258C13.3807 19.4258 14.5 18.3065 14.5 16.9258C14.5 15.5451 13.3807 14.4258 12 14.4258C10.6193 14.4258 9.5 15.5451 9.5 16.9258C9.5 18.3065 10.6193 19.4258 12 19.4258Z" stroke="#8B9398" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 22.9258H7C3 22.9258 2 21.9258 2 17.9258V15.9258C2 11.9258 3 10.9258 7 10.9258H17C21 10.9258 22 11.9258 22 15.9258V17.9258C22 21.9258 21 22.9258 17 22.9258Z" stroke="#8B9398" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span onclick="viewPassword1()" id="icon-eye1" class="fa-regular fa-eye-slash"></span>
+                 
+                <input type="password" id="password-field1" placeholder="كلمة المرور">
+             </div>
+            <div class="remember">
+                <div><input type="checkbox"><span for="">تذكرني</span></div>   
+                <div><a href="forgetPassword.html">نسيت كلمة السر</a></div>                
+            </div>  
+        </form>
+        <div class="log">
+            <a href="dashboard.html"><button class="login-btn">تسجيل دخول</button></a>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

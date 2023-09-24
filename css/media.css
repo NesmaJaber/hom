@@ -1,0 +1,433 @@
+@media (max-width:600px) {
+    .item{
+        display: none;
+    }
+    .dashboard .container-dashboard .right-side {
+
+        position: fixed;
+        width: 80px;
+        right: 10px;
+    
+    }
+    .dashboard .container-dashboard .right-side .navbar-brand-item {
+    display: none;
+    }
+    .dashboard .container-dashboard .left-side {
+        width: calc(100% - 120px);
+        position: absolute;
+        right: 100px;
+    }
+    .dashboard .container-dashboard .left-side .div-nav {
+        display: block;
+        width: fit-content;
+        background-color: transparent;
+        padding: 0px;
+        min-height: 65px;
+        box-shadow: none;
+        z-index: 111111;
+    
+    }
+    .navbar{
+        background-color: var(--whiteColor);
+        border-radius: 10px;
+        padding: 0;
+        position: fixed;  
+        box-shadow: 5px 2px 10px #eee;
+        z-index: 11111111;
+        width: fit-content;
+
+    }
+
+    .dashboard .container-dashboard .right-side .links-side {
+        background-color: var(--whiteColor, #fff);
+        border-radius: 10px;
+        padding: 5px 0px;
+        text-align: center;
+    }
+    
+    .navv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .search {
+      
+        font-family: 'droid';
+        width: 250px;
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side .navv li {
+        list-style: none;
+        margin: 3px 15x;
+        padding: 5px 10px;
+        width: 100%;
+    
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side .navv li svg {
+        height: 26px;
+        width: 26px;
+        stroke:#626878;
+        stroke-width:1.5;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        cursor: pointer;
+    
+    }
+    .hide{
+        display: block;
+        margin-left: 40px;
+    }
+}
+@media (min-width:992px)and (max-width:1300px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'droid';
+    }
+    
+    @font-face {
+        font-family: 'droid';
+        src: url(../fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf);
+    }
+    
+    :root {
+        --textColor: #4D4D4D;
+        --primaryColor: #0D2F8C;
+        --bg: #F2F4F7;
+        --secondrayColor: #A6A8B1;
+        --whiteColor: #fff;
+        --textSecondary: #3D3C48;
+        --color: #C5C9D5;
+        --text: #3D3C48;
+        --colorText: #6E7079;
+        --bgg: #F1F3F9;
+    
+    }
+    
+    body {
+        background-color: var(--bg);
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .dashboard {
+        width: 90%;
+        margin: 0px 40px;
+        padding: 10px;
+    }
+    
+    .dashboard .container-dashboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+    .dashboard .container-dashboard .right-side {
+    
+        position: fixed;
+        width: 300px;
+        right: 40px;
+    
+    }
+    
+    .dashboard .container-dashboard .right-side .navbar-brand-item {
+        background-color: var(--whiteColor, #fff);
+        border-radius: 10px;
+        height: 65px;
+        display: flex;
+        box-shadow: 5px 2px 10px #eee;
+        padding: 10px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-brand-item .navbar-brand span {
+        color: var(--textColor , #4D4D4D);
+        margin-right: 5px;
+        font-weight: bold;
+        font-family: 'droid';
+        font-size: 18px;
+    
+    }
+    .navbar-brand-item  svg {
+        flex-shrink: 0;
+        stroke-width: 1px;
+        stroke: #C5C9D5;
+        margin: 10px;
+    
+    }
+    .navbar-brand-item .link {
+        color: var(--primary-color, #0D2F8C);
+        text-align: right;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side {
+        background-color: var(--whiteColor, #fff);
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side .navv {
+    
+        width: 100%;
+    
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side .navv li {
+        list-style: none;
+        margin: 2px 10px;
+        padding: 5px 20px;
+        width: 100%;
+    
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side .navv li svg {
+        height: 18px;
+        width: 18px;
+        stroke:#626878;
+        stroke-width:1.5;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+    
+    }
+    .dashboard .container-dashboard .right-side .links-side .navv li svg .path1{
+        fill:#0D2F8C;
+        opacity:0.4;
+    
+    }
+    .dashboard .container-dashboard .right-side .links-side .navv li svg .path2{
+        fill:#0D2F8C;
+    
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side .navv li a {
+        color: var(--colorText, #6E7079);
+        font-family: 'droid';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 15px;
+        text-decoration: none;
+    
+    }
+    
+    .dashboard .container-dashboard .right-side .links-side .navv li.active {
+        background: rgba(0, 32, 120, 0.10);
+        color: var(--primaryColor);
+        border-radius: 15px;
+        font-weight: bold;
+    }
+    
+    .dashboard .container-dashboard .left-side {
+        width: calc(100% - 400px);
+        position: absolute;
+        right: 360px;
+    }
+    
+    .dashboard .container-dashboard .left-side .div-nav {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 10px;
+        z-index: 1111;
+        box-shadow: 5px 2px 10px #eee;
+        background-color: var(--whiteColor, #fff);
+        border-radius: 10px;
+        padding: 10px 0px;
+        height: 65px;
+    
+    
+    }
+    
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: var(--primaryColor, #0D2F8C);
+        font-weight: 700;
+        font-family: 'droid';
+        font-size: 18px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link.active {
+        margin-left: 10px;
+        font-family: 'droid';
+    }
+    
+    .user-name {
+       flex-direction: column;
+    
+    }
+    a .user-name .job-title {
+        font-size: 12px;
+        color: var(--secondary-Text, #626878);
+        text-align: right;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    
+    }
+    
+    a .user-name .nameUser {
+        font-size: 14px;
+        text-decoration: none;
+        text-align: right;
+        font-weight: bold;
+        color: var(--textSecondary,#3D3C48);
+    }
+    
+    .search {
+        display: flex;
+        padding: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 20px;
+        text-indent: 50px;
+        border: 1px solid var(--black-1, #CFD3D4);
+        background: #FFF;
+        font-family: 'droid';
+        width: 200px;
+    }
+    
+    .form {
+        position: relative;
+    
+    }
+    
+    .form svg {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        display: flex;
+        width: 24px;
+        height: 24px;
+        color: #A6A8B1;
+        transform: translateY(-50%);
+    
+    }
+    
+    .lang {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        border: 1px solid #3D3C48;
+        opacity: 0.78;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+    
+    .lang a {
+        color: #3D3C48;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: normal;
+    }
+    
+    .notification {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        opacity: 0.78;
+        background: #F1F3F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:15px;
+        position: relative;
+    }
+    
+    .notification .point {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        background-color: #D41F6B;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -3px;
+        right: -3px;
+    }
+    
+    .notification .point span {
+        color: #FFF;
+        text-align: right;
+        font-family: 'droid';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+    }
+    
+    .user-de {
+        margin-right: 15px;
+    
+    }
+    
+    .user-de .img-user {
+        margin-left: 10px;
+    }
+    
+    .content-sections .home-section {
+        margin-top: 15px;
+    }
+    
+    .content-sections .home-section .main-about .card1,
+    .content-sections .home-section .main-about .card2,
+    .content-sections .home-section .main-about .card3 {
+        background-color: var(--whiteColor);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    #container {
+        max-width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: var(--whiteColor);
+    }
+    
+    .highcharts-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    .highcharts-xaxis-title,
+    .highcharts-yaxis-title {
+        font-size: 18px;
+        font-weight: bold;
+    
+        color: #666;
+    }
+    .task-div{
+        background-color: var(--whiteColor);
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .left-section{
+        background-color: var(--whiteColor);
+        border-radius: 10px;
+        padding: 20px;
+    }
+}

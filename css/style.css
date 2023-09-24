@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+:root {
+    --textColor: #4D4D4D;
+    --primaryColor: #0D2F8C;
+    --bg: #F2F4F7;
+    --secondrayColor:#A6A8B1;
+    --whiteColor: #fff;
+    --textSecondary: #3D3C48;
+    --color: #C5C9D5;
+    --text: #3D3C48;
+    --bgg: #F1F3F9;
+
+}
+
+@font-face {
+    font-family: 'droid';
+    src: url(../fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf);
+}
+
+.navbar {
+    margin-top: 10px;
+
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+
+}
+
+.navbar-brand-item {
+    background-color: var(--whiteColor);
+    border-radius: 10px;
+    padding: 15px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.navbar-nav-item {
+    background-color: var(--whiteColor);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    min-width: 75%;
+}
+
+.navbar-nav {
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-light .navbar-brand span {
+    color: var(--textColor , #4D4D4D);
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: 'droid';
+
+}
+
+.navbar-light .link {
+    color: var(--primaryColor, #0D2F8C);
+    text-align: right;
+    font-family: 'droid';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--primaryColor, #0D2F8C);
+    font-weight: 700;
+    font-family: 'droid';
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    margin-left: 100px;
+    font-family: 'droid';
+}
+
+.search {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 20px;
+    text-indent: 50px;
+    border: 1px solid var(--black-1, #CFD3D4);
+    background: #FFF;
+    font-family: 'droid';
+    width: 300px;
+}
+
+.form {
+    position: relative;
+
+}
+
+.form svg {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    color: #A6A8B1;
+    transform: translateY(-50%);
+
+}
+
+.lang {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #3D3C48;
+    opacity: 0.78;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.lang a {
+    color: #3D3C48;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: normal;
+}
+
+.notification {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    opacity: 0.78;
+    background: #F1F3F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    position: relative;
+}
+
+.notification .point {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: #D41F6B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+.notification .point span {
+    color: #FFF;
+    text-align: right;
+    font-family: 'droid';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.userr {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-account {
+    margin-right: 30px;
+
+}
+
+.user-account .det-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.user-account .det-user .us h6 {
+    color: var(--text, #3D3C48);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'droid';
+}
+
+.user-account .det-user .us p {
+    font-size: 14px;
+    font-family: 'droid';
+    font-weight: 400;
+    color: var(--textSecondary, #626878);
+}
+
+.user-account .img-user img {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    margin-left: 14px;
+
+
+}
+
+.main {
+    gap: 20px;
+    margin-top: 10px;
+
+}
+
+.right-side {
+    background-color: white;
+    width: 24%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sections {
+    width: 55%;
+    border-radius: 10px;
+
+}
+
+.left-side {
+    width: 20%;
+    border-radius: 10px;
+
+
+}
+
+.navvv {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.navvv .link-item {
+    list-style: none;
+    color: var(--primaryColor);
+    font-weight: bold;
+    margin-top:2px;
+    padding: 2px 10px;
+}
+
+.navvv .link-item a {
+    color: var(--gray-40-secondary-text, #6E7079);
+    font-family: 'droid';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navvv .link-item.active {
+    background: rgba(0, 32, 120, 0.10);
+    color: var(--primaryColor);
+    border-radius: 15px;
+    font-weight: bold;
+
+}
+
+.navvv .link-item.active a {
+    color: #243C7E;
+    font-family: 'droid';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+}
+
+.navvv .link-item.active svg path {
+    fill: #0D2F8C;
+    stroke:#eee;
+
+}

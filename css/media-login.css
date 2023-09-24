@@ -1,0 +1,619 @@
+/* media */
+@media (max-width:480px) {
+
+    /* --- login page --- */
+    body.login-page {
+        background: url(../img/background.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-form {
+        width: 330px;
+        padding: 20px 30px;
+        height: 500px;
+        border-radius: 48px;
+        display: flex;
+        background: var(--whiteColor, #fff);
+        flex-direction: column;   
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .brand-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand span {
+        font-size: 20px;
+        font-family: 'droid';
+        margin-right: 5px;
+        font-weight: bold;
+        color: #4D4D4D;
+    }
+
+
+    .brand-item .stroke-svg {
+        width: 25px;
+        flex-shrink: 0;
+        stroke-width: 1px;
+        stroke: #C5C9D5;
+    }
+
+    .link-brand {
+        color: var(--primary-color, #0D2F8C);
+        text-align: right;
+        font-family: 'droid';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+    }
+
+    .login-header .title {
+        color: var(--primary-color, #0D2F8C);
+        text-align: right;
+        font-family: 'droid';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .login-header .des {
+        color: var(--secondary-Text, #626878);
+        text-align: right;
+        font-family: 'droid';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 5px;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .form .email-title,
+    .form .pass-title {
+        color: var(--secondary-Text, #626878);
+        text-align: right;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 20px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .form .pass-title {
+        margin-top: 10px;
+    }
+
+    .form .email-field input::placeholder,
+    .form .password-field input::placeholder {
+        font-family: 'droid';
+        font-size: 12px;
+    }
+
+    .form .email-field input,
+    .form .password-field input {
+        display: flex;
+        text-indent: 40px;
+        padding: 3px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+        width: 100%;
+        border-radius: 20px;
+        background: var(--field, #F2F4F7);
+        border: none;
+        color: #1C1D22;
+        text-align: right;
+        font-family: 'droid';
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+    .form .email-field {
+        position: relative;
+    }
+
+    .form .email-field svg {
+        position: absolute;
+        top: 58%;
+        right: 21px;
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .form .password-field {
+        position: relative;
+    }
+
+    .form .password-field .pass {
+        position: absolute;
+        top: 58%;
+        right: 21px;
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .form .password-field #icon-eye {
+        position: absolute;
+        top: 62%;
+        left: 21px;
+        font-style: 24px;
+        cursor: pointer;
+        color: #626878;
+
+    }
+
+    .form .remember {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .form .remember input {
+        width: 19px;
+        height: 19px;
+        margin-left: 8px;
+        border-radius: 7px;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .form .remember input:checked {
+        background-color: var(--primary-color, #0D2F8C);
+    }
+
+    .form .remember span {
+        color: var(--secondary-Text, #626878);
+        text-align: right;
+        font-family: 'droid';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+    }
+
+    .form .remember a {
+        color: var(--primary-color, #0D2F8C);
+        text-align: center;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: normal;
+
+    }
+
+    .log {
+        width: 100%;
+    }
+
+    .login-btn {
+        display: flex;
+        height: 45px;
+        padding: 17px 16px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background: linear-gradient(273deg, #0D2F8C 2.66%, #5D7DD7 96.93%);
+        border: none;
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: 'droid';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 25px;
+        line-height: normal;
+    }
+
+    /* --- forget password page --- */
+    body.forget-page {
+        background-color: #F2F4F7;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foregetPass-form {
+        width: 330px;
+        padding: 20px 30px;
+        height: 500px;
+        border-radius: 48px;
+        display: flex;
+        background: #FFF;
+        flex-direction: column;
+
+    }
+
+    .foregetPass-form .header-forget {
+        text-align: center;
+
+    }
+
+    .foregetPass-form .header-forget svg {
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .foregetPass-form .header-forget .forget-title {
+        color: #1C1D22;
+        font-family: 'droid';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 21px;
+
+    }
+
+    .foregetPass-form .header-forget .forget-des {
+        color: #8B9398;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 11px;
+
+    }
+
+    .foregetPass-form .formForget .email-title-forget {
+        color: #626878;
+        text-align: right;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 30px;
+        line-height: normal;
+        margin-bottom: 8px;
+        margin-right: 14px;
+
+    }
+
+    .foregetPass-form .formForget input {
+        display: flex;
+        padding: 5px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 1 0 0;
+        align-self: stretch;
+        width: 100%;
+        border-radius: 20px;
+        background: var(--field, #F2F4F7);
+        border: none;
+        color: #1C1D22;
+        text-align: right;
+        font-family: 'droid';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .foregetPass-form .formForget input::placeholder {
+        font-size: 14px;
+
+    }
+
+    .foregetPass-form .forget-btn {
+        display: flex;
+        height: 45px;
+        cursor: pointer;
+        padding: 17px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background: linear-gradient(273deg, #0D2F8C 2.66%, #5D7DD7 96.93%);
+        border: none;
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: 'droid';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 40px;
+        line-height: normal;
+    }
+
+    /* ---  virification page --- */
+    body.virification-page {
+        background-color: #F2F4F7;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .virification-form {
+        width: 330px;
+        padding: 20px 30px;
+        height: 500px;
+        border-radius: 48px;
+        display: flex;
+        background: #FFF;
+        flex-direction: column;
+    }
+
+    .virification-form .header-virification {
+        text-align: center;
+
+    }
+
+    .virification-form .header-virification svg {
+        margin-top: 10px;
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .virification-form .header-virification .virification-title {
+        color: #1C1D22;
+        font-family: 'droid';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 18px;
+
+    }
+
+    .virification-form .header-virification .virification-des {
+        color: #8B9398;
+        font-family: 'droid';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 11px;
+    }
+
+    .virification-form .header-virification .code-sent {
+        color: #8B9398;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 1px;
+    }
+
+    .virification-form .code {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+
+    .virification-form .re-send {
+        text-align: center;
+        color: #1C1D22;
+        font-family: 'droid';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 24px;
+    }
+
+    .virification-form .re-send span {
+        color: #0D2F8C;
+        font-family: 'droid';
+        font-size: 12px;
+        font-style: normal;
+        margin-right: 4px;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+
+    }
+
+    .virification-form .virification-btn {
+        margin-top: 30px;
+        display: flex;
+        cursor: pointer;
+        height: 45px;
+        padding: 17px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background: linear-gradient(273deg, #0D2F8C 2.66%, #5D7DD7 96.93%);
+        border: none;
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: 'droid';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    /* ---  reset page --- */
+    body.reset-page {
+        background-color: #F2F4F7;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reset-form {
+        width: 330px;
+        padding: 20px 30px;
+        height: 500px;
+        border-radius: 48px;
+        display: flex;
+        background: #FFF;
+        flex-direction: column;
+    }
+
+    .reset-form .header-reset {
+        text-align: center;
+
+    }
+
+    .reset-form .header-reset svg {
+        width: 70px;
+        height: 114px;
+    }
+
+    .reset-form .header-reset .reset-title {
+        color: #1C1D22;
+        font-family: 'droid';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 5px;
+
+    }
+
+    .reset-form .header-reset .reset-des {
+        color: #8B9398;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 5px;
+    }
+
+    .reset-btn {
+        margin-top: 20px;
+        display: flex;
+        height: 45px;
+        padding: 17px 16px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background: linear-gradient(273deg, #0D2F8C 2.66%, #5D7DD7 96.93%);
+        border: none;
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: 'droid';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .reset-form .password-field {
+        position: relative;
+    }
+
+    .reset-form .password-field .pass {
+        position: absolute;
+        top: 58%;
+        right: 21px;
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .reset-form .pass-title1 {
+        color: var(--secondary-Text, #626878);
+        text-align: right;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 15px;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    .reset-form .pass-title2 {
+        color: var(--secondary-Text, #626878);
+        text-align: right;
+        font-family: 'droid';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 10px;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    .reset-form .password-field .eye {
+        position: absolute;
+        top: 58%;
+        left: 21px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .reset-form.pass-title {
+        margin-top: 12px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .reset-form .password-field input {
+        display: flex;
+        text-indent: 40px;
+        padding: 3px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 1 0 0;
+        align-self: stretch;
+        width: 100%;
+        border-radius: 20px;
+        background: var(--field, #F2F4F7);
+        border: none;
+        color: #1C1D22;
+        text-align: right;
+        font-family: 'droid';
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+
+
+}
